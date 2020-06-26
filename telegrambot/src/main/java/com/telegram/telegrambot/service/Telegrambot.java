@@ -18,6 +18,8 @@ public class Telegrambot extends TelegramLongPollingBot {
 
 		try {
 			execute(massage);
+			TorrentCrawling abc = new TorrentCrawling();
+			abc.init();
 		} catch (TelegramApiException e) {
 
 		}

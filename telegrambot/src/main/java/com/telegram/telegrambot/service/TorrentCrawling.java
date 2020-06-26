@@ -25,5 +25,11 @@ public class TorrentCrawling {
 
 		driver.get("https://torrentlike.com");
 
+		String content = driver.getPageSource();
+
+		log.info("content = {}", content);
+
+		driver.quit();
+
 	}
 }
